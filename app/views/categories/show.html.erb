@@ -1,7 +1,8 @@
-<h3>Memo List</h3>
-    
-    
-    <% @memos.each do |memo| %>
+<h3><%= @category.name %>'s memo</h3>
+
+<p><%= @category_id %></p>
+
+<% @memos.each do |memo| %>
     <div class="col-sm-4">
         <div class="panel panel-info">
           <div class="panel-heading">
@@ -18,7 +19,3 @@
     </div>
         
     <% end %>
-
-
-
-
